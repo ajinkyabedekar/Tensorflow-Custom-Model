@@ -1,0 +1,26 @@
+<annotation>
+	<folder>video2</folder>
+	<filename>thumb0282.jpg</filename>
+	<path>/Users/koool_ag/Downloads/Snatch Theft/video2/thumb0282.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>360</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>snatching objects</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>380</xmin>
+			<ymin>72</ymin>
+			<xmax>519</xmax>
+			<ymax>283</ymax>
+		</bndbox>
+	</object>
+</annotation>

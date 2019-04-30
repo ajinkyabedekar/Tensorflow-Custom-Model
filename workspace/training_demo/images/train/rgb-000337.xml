@@ -1,0 +1,26 @@
+<annotation>
+	<folder>vid0060</folder>
+	<filename>rgb-000337.jpg</filename>
+	<path>C:\Users\ajink\Downloads\Compressed\data\vid0060\rgb-000337.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>720</width>
+		<height>576</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>leave bag unattended</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>211</xmin>
+			<ymin>445</ymin>
+			<xmax>291</xmax>
+			<ymax>576</ymax>
+		</bndbox>
+	</object>
+</annotation>

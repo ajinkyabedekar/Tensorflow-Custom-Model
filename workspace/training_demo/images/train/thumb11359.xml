@@ -1,0 +1,38 @@
+<annotation>
+	<folder>untitled folder</folder>
+	<filename>thumb11359.jpg</filename>
+	<path>/Users/koool_ag/Downloads/untitled folder/untitled folder/thumb11359.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1280</width>
+		<height>720</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>crossing railway track</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>582</xmin>
+			<ymin>571</ymin>
+			<xmax>786</xmax>
+			<ymax>720</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>crossing railway track</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>781</xmin>
+			<ymin>605</ymin>
+			<xmax>1192</xmax>
+			<ymax>720</ymax>
+		</bndbox>
+	</object>
+</annotation>

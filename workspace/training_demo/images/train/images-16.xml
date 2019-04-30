@@ -1,0 +1,38 @@
+<annotation>
+	<folder>untitled folder</folder>
+	<filename>images-16.jpeg</filename>
+	<path>/Users/koool_ag/Downloads/untitled folder/images-16.jpeg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>266</width>
+		<height>189</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>crossing railway track</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>116</xmin>
+			<ymin>84</ymin>
+			<xmax>130</xmax>
+			<ymax>107</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>crossing railway track</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>165</xmin>
+			<ymin>80</ymin>
+			<xmax>178</xmax>
+			<ymax>103</ymax>
+		</bndbox>
+	</object>
+</annotation>

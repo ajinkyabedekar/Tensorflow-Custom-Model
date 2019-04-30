@@ -1,0 +1,26 @@
+<annotation>
+	<folder>vid0063</folder>
+	<filename>rgb-000173.jpg</filename>
+	<path>/home/dhruva/Documents/capstone/data/data/JPEGImages/vid0063/rgb-000173.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>720</width>
+		<height>576</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>leave bag unattended</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>326</xmin>
+			<ymin>188</ymin>
+			<xmax>514</xmax>
+			<ymax>528</ymax>
+		</bndbox>
+	</object>
+</annotation>
