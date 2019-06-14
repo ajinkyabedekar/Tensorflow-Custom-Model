@@ -1,59 +1,65 @@
-Step 1: cd C:\Users\ajink\Documents\TensorFlow\workspace\training_demo\annotations
+The project was completed to have the source code to customize the Tensorflow model.
 
-Step 2: Edit label_map.pbtxt
+The repository contains the complete source code of the project.
 
-Step 3: cd C:\Users\ajink\Documents\TensorFlow\scripts\preprocessing
+Steps to follow:
 
-Step 4: Edit xml_to_csv.py
+1. cd C:\Users\ajink\Documents\TensorFlow\workspace\training_demo\annotations
 
-Step 5: python xml_to_csv.py -i C:\Users\ajink\Documents\TensorFlow\workspace\training_demo\images\train -o C:\Users\ajink\Documents\TensorFlow\workspace\training_demo\annotations\train_labels.csv
+2. Edit label_map.pbtxt
 
-Step 6: python xml_to_csv.py -i C:\Users\ajink\Documents\TensorFlow\workspace\training_demo\images\test -o C:\Users\ajink\Documents\TensorFlow\workspace\training_demo\annotations\test_labels.csv
+3. cd C:\Users\ajink\Documents\TensorFlow\scripts\preprocessing
 
-Step 7: cd C:\Users\ajink\Documents\TensorFlow\scripts\preprocessing
+4. Edit xml_to_csv.py
 
-Step 8: Edit generate_tfrecord.py
+5. python xml_to_csv.py -i C:\Users\ajink\Documents\TensorFlow\workspace\training_demo\images\train -o C:\Users\ajink\Documents\TensorFlow\workspace\training_demo\annotations\train_labels.csv
 
-Step 9: python generate_tfrecord.py --label=ship --csv_input=C:\Users\ajink\Documents\TensorFlow\workspace\training_demo\annotations\train_labels.csv --output_path=C:\Users\ajink\Documents\TensorFlow\workspace\training_demo\annotations\train.record --img_path=C:\Users\ajink\Documents\TensorFlow\workspace\training_demo\images\train
+6. python xml_to_csv.py -i C:\Users\ajink\Documents\TensorFlow\workspace\training_demo\images\test -o C:\Users\ajink\Documents\TensorFlow\workspace\training_demo\annotations\test_labels.csv
 
-Step 10: python generate_tfrecord.py --label=ship --csv_input=C:\Users\ajink\Documents\TensorFlow\workspace\training_demo\annotations\test_labels.csv --output_path=C:\Users\ajink\Documents\TensorFlow\workspace\training_demo\annotations\test.record --img_path=C:\Users\ajink\Documents\TensorFlow\workspace\training_demo\images\test
+7. cd C:\Users\ajink\Documents\TensorFlow\scripts\preprocessing
 
-Step 11: cd C:\Users\ajink\Documents\TensorFlow\workspace\training_demo\training
+8. Edit generate_tfrecord.py
 
-Step 12: Edit ssd_inception_v2_coco.config
+9. python generate_tfrecord.py --label=ship --csv_input=C:\Users\ajink\Documents\TensorFlow\workspace\training_demo\annotations\train_labels.csv --output_path=C:\Users\ajink\Documents\TensorFlow\workspace\training_demo\annotations\train.record --img_path=C:\Users\ajink\Documents\TensorFlow\workspace\training_demo\images\train
 
-Step 13: cd C:\Users\ajink\Documents\Tensorflow\models\research
+10. python generate_tfrecord.py --label=ship --csv_input=C:\Users\ajink\Documents\TensorFlow\workspace\training_demo\annotations\test_labels.csv --output_path=C:\Users\ajink\Documents\TensorFlow\workspace\training_demo\annotations\test.record --img_path=C:\Users\ajink\Documents\TensorFlow\workspace\training_demo\images\test
 
-Step 14: set PYTHONPATH=C:\Users\ajink\Documents\Tensorflow\models
+11. cd C:\Users\ajink\Documents\TensorFlow\workspace\training_demo\training
 
-Step 15: set PYTHONPATH=C:\Users\ajink\Documents\Tensorflow\models\research
+12. Edit ssd_inception_v2_coco.config
 
-Step 16: set PYTHONPATH=C:\Users\ajink\Documents\Tensorflow\models\research\slim
+13. cd C:\Users\ajink\Documents\Tensorflow\models\research
 
-Step 17: python setup.py build
+14. set PYTHONPATH=C:\Users\ajink\Documents\Tensorflow\models
 
-Step 18: python setup.py install
+15. set PYTHONPATH=C:\Users\ajink\Documents\Tensorflow\models\research
 
-Step 19: cd C:\Users\ajink\Documents\TensorFlow\workspace\training_demo
+16. set PYTHONPATH=C:\Users\ajink\Documents\Tensorflow\models\research\slim
 
-Step 20: python train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/ssd_inception_v2_coco.config
+17. python setup.py build
 
-Step 21: cd C:\Users\ajink\Documents\TensorFlow\workspace\training_demo
+18. python setup.py install
 
-Step 22: tensorboard --logdir=training\
+19. cd C:\Users\ajink\Documents\TensorFlow\workspace\training_demo
 
-Step 23: cd C:\Users\ajink\Documents\TensorFlow\workspace\training_demo\training
+20. python train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/ssd_inception_v2_coco.config
 
-Step 24: Sort all the files inside training_demo/training by descending time and pick the model.ckpt-* file that comes first in the list. Make a note of the file’s name, as it will be passed as an argument when we call the export_inference_graph.py script.
+21. cd C:\Users\ajink\Documents\TensorFlow\workspace\training_demo
 
-Step 25: cd C:\Users\ajink\Documents\TensorFlow\workspace\training_demo
+22. tensorboard --logdir=training\
 
-Step 26: python export_inference_graph.py --input_type image_tensor --pipeline_config_path training/ssd_inception_v2_coco.config --trained_checkpoint_prefix training/model.ckpt-* --output_directory trained-inference-graphs/output_inference_graph_v1.pb
+23. cd C:\Users\ajink\Documents\TensorFlow\workspace\training_demo\training
 
-Step 27: cd C:\Users\ajink\Documents\Tensorflow\workspace\training_demo
+24. Sort all the files inside training_demo/training by descending time and pick the model.ckpt-* file that comes first in the list. Make a note of the file’s name, as it will be passed as an argument when we call the export_inference_graph.py script.
 
-Step 28: Edit tensorflow_object_detection.py
+25. cd C:\Users\ajink\Documents\TensorFlow\workspace\training_demo
 
-Step 29: activate tensorflow_gpu
+26. python export_inference_graph.py --input_type image_tensor --pipeline_config_path training/ssd_inception_v2_coco.config --trained_checkpoint_prefix training/model.ckpt-* --output_directory trained-inference-graphs/output_inference_graph_v1.pb
 
-Step 30: python tensorflow_object_detection.py
+27. cd C:\Users\ajink\Documents\Tensorflow\workspace\training_demo
+
+28. Edit tensorflow_object_detection.py
+
+29. activate tensorflow_gpu
+
+30. python tensorflow_object_detection.py
